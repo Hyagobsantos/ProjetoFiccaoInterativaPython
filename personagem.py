@@ -10,9 +10,10 @@ class Personagem:
     def validaSaldo(self, valorAtual):
         while True:
             valorAtual = float(input("Digite um saldo maior que 0"))
-            if valorAtual > 0: #while seria um boa aqui 
+            if valorAtual > 0: #while seria um boa aqui #@josucka == com esse while ele repete pra q se digite o valor do saldo duas vezes, entao temos temos que validar o saldo na primeira vez que digitar.
                 self.saldo = valorAtual
                 break
+                #se vc colocou o input la no main pq vc colocou aqui tbm, nao entendi.
                 
             
                   
