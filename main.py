@@ -1,5 +1,5 @@
 from personagem import Personagem
-from animacaoTexto import animacao
+
 
 
 # nome = str(input("Digite Seu Nome\n-> "))

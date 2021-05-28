@@ -19,15 +19,8 @@ class Personagem:
         print(f"Local Atual: {local}")
 
 
-    def alimentar(self, periodo, comida):
-        if periodo == "Manhã":
-            if comida == 1:
-                print("Que saudavel Comeu uma Maça")
-            elif comida == 2:
-                print("Exelente escolha Adoro Panqueca")
-            elif comida == 3:
-                print(" Você Comeu um Sanduiche de Queijo")
-        elif periodo == "Tarde":
+    def alimentar(self, comida):
+            
             if comida == 1:
                 print('Hummm! Você comeu chocolate') 
             elif comida == 2:
@@ -48,15 +41,7 @@ class Personagem:
                             break
                     else:
                         break
-        elif periodo == "Noite":
-            if comida == 1:
-                print("")
-            elif comida == 2:
-                print("")
-            elif comida() == 3:
-                print("")
-        else:
-            print("Periodo Invalido")
+           
             
     def mostarObjeto(self):
         print(f"\nNome: {self.nome}\nGenero: {self.sexo}\nIdade: {self.idade}\nOcupação: {self.ocupacao}\nSaldo: {self.saldo}")
