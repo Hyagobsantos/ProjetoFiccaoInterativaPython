@@ -1,4 +1,5 @@
 from personagem import Personagem
+from animacaoTexto import animacao
 
 
 nome = str(input("Digite Seu Nome\n-> "))
@@ -26,6 +27,23 @@ Criacao.validaSaldo(saldo)
 print(Criacao.saldo)
 
 Criacao.mostarObjeto()
+
+
+# comida = Personagem() !--Classe instanciada ALimentação Validada Pronto Para Usar --!
+# #validar as opçoes
+
+# textoAlimentacao  = ('''
+#         escolha as seguites opções de alimentos para matar sua fome:
+#             [1]-chocolate
+#             [2]-hamburger
+#             [3]-pizza
+#             [4]-fruta
+#             [5]-comida caseira\n->''')
+# animacao(textoAlimentacao)
+# escolha = int(input())
+# comida.alimentação(escolha)
+
+
 
 
 
