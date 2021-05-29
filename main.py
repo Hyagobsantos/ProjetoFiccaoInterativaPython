@@ -1,5 +1,5 @@
 from personagem import Personagem
-from opcao import Opcaoes
+from opcao import Opcao
 
 
 

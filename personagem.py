@@ -1,4 +1,4 @@
-from opcao import Opcaoes
+from opcao import Opcao
 
 class Personagem:
     def __init__(self, nome, hp, forca, rodada):
@@ -12,7 +12,7 @@ class Personagem:
     
 
     def armas(self):
-        escolhaAtual = Opcaoes("Machado","Espada","Arco")
+        escolhaAtual = Opcao("Machado","Espada","Arco")
         escolhaAtual.escolha()
         selecao = int(input())
         if selecao == 1:
