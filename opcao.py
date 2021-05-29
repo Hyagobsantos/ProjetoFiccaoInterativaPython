@@ -1,12 +1,22 @@
 #opcao generica capitulo 0
-def opcao(escolha):
+class Opcao:
+    def __init__(self,escolha1, escolha2,escolha3):
+        self.escolha1 = escolha1
+        self.escolha2 = escolha2
+        self.escolha3 = escolha3
 
-    # if escolha1 != "":
-    #     print("1-", escolha1)
-    # elif escolha2 != "":
-    #     print("2-", escolha2)
-    # elif escolha3 != "":
-    #     print("3-", escolha3)
+    def escolha(self): #exibe apenas as opçoes // validaçoes posteriores seram realizadas no main
+        print(f'''
+                [1] - {self.escolha1}
+                [2] - {self.escolha2}
+                [3] - {self.escolha3}
+        ''')
 
-    
+
+
+
+
+
+
+
     

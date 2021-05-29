@@ -12,8 +12,8 @@ class Personagem:
     
 
     def armas(self):
-        escolhaAtual = Opcaoes()
-        escolhaAtual.escolha("Machado","Espada","Arco")
+        escolhaAtual = Opcaoes("Machado","Espada","Arco")
+        escolhaAtual.escolha()
         selecao = int(input())
         if selecao == 1:
             print("Arma Machado Escolhida")
