@@ -1,24 +1,28 @@
 from opcao import Opcaoes
 
 class Personagem:
-    def __init__(self, nome, hp, forca):
+    def __init__(self, nome, hp, forca, rodada):
         self.nome = nome
         self.hp = hp
         self.forca = forca
+        self.rodadaAtual = rodada
 
     def exibecondicaoatual(self): #exibe condicao atual do personagem 
-        print(f"{self.hp} - {self.forca}") #print de condicao atual personagem
+        print(f"{self.hp} - {self.forca} - {self.rodadaAtual}") #print de condicao atual personagem
     
 
-    def armas(self, arma):
+    def armas(self):
         escolhaAtual = Opcaoes()
         escolhaAtual.escolha("Machado","Espada","Arco")
+        selecao = int(input())
+        if selecao == 1:
+            print("Arma Machado Escolhida")
+        elif selecao == 2:
+            print("Arma Espada Escolhida")
+        elif selecao == 3:
+            print("Arma Arco Escolhida")
+
+    def rodada(self):
+        self.rodadaAtual += 1
+
        
-
-
-
-
-#3 
-# armas 1 = equlibrio -> hp: 10 forca: 10 
-#arma 2 = vida -> hp: 18 forca: 2
-#arma 3 = forca -> hp: 2 forca: 18
