@@ -28,7 +28,6 @@ class Personagem:
         else:
             print(f"Você Foi Morto Por um Mostro {lv.titulo}")
 
-
     def exibeStatus(self): #exibe condicao atual do personagem 
         
         # print(f"{self.hp} - {self.forca} - {self.rodadaAtual}") #print de condicao atual personagem
@@ -63,7 +62,6 @@ class Personagem:
         
         self.arma = armae
         
-
     def rodada(self):
         self.rodadaAtual += 1
         print(self.rodadaAtual)
