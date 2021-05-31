@@ -6,15 +6,16 @@ from os import system
 from inimigo import Inimigo
 import time
 
-#pensando em criar um menu perguntando se o usuario deseja começar sim ou não // criar tbm no padrao bem vindo 
+#pensando em criar um menu perguntando se o usuario deseja começar sim ou não // criar tbm no padrao bem vindo ||| não deu tempo de fazer, mas estou pesquisando
 
 system('cls') 
-texto = (str('''
- __ ___   _  _    ___ ___ _   _   _ _ _ _  _ __   _  
-/ _| __| | |/ \  | o ) __| \_/ | | | | | \| |  \ / \ 
-\_ \ _|n_| | o | | o \ _|| \_/ | | V | | \\ | o ) o )
-|__/___\__/|_n_| |___/___|_| |_|  \_/|_|_|\_|__/ \_/ '''))
 
+#talvez seja melhor tirar o seja e deixar só o bem vindo, talvez com outra fonte, o que acha? ai em baixo do bem vindo coloca as opções do menu
+texto = (str('''
+                            __ ___   _  _    ___ ___ _   _   _ _ _ _  _ __   _  
+                            / _| __| | |/ \  | o ) __| \_/ | | | | | \| |  \ / \ 
+                            \_ \ _|n_| | o | | o \ _|| \_/ | | V | | \\ | o ) o )
+                            |__/___\__/|_n_| |___/___|_| |_|  \_/|_|_|\_|__/ \_/ '''))
 
 animacao(texto)
 print("\n")
@@ -48,7 +49,31 @@ while controle == 1:
         time.sleep(1)
         print(f"{espaco}|__ ")
     print("Alerta Tem Um Mostro A Frente ... O que deseja fazer? ")
-    # e encontrou um monstro ....O que deseja fazer?')#preso em uma jaula kkkkkkkk?
+    print('''
+                                                      _,--~~~,
+                                                    .'        `.
+                                                    |           ;
+                                                    |           :
+                                                   /_,-==/     .'
+                                                 /'`\*  ;      :      
+                                               :'    `-        :      
+                                               `~*,'     .     :      
+                                                  :__.,._  `;  :      
+                                                  `/'    )  '  `,     
+                                                      \-/  '     )     
+                                                      :'          \ _
+                                                       `~---,-~    `,)
+                                       ___                   \     /~`/
+                                 \---__ `;~~~-------------~~~(| _-'    `,
+                               ---, ' \`-._____     _______.---'        
+                              \--- `~~-`,      ~~~~~~                     
+                             \----      )                                  
+                             \----.  __ /                                    
+                              \----'` -~____  
+                                            ~~~~~--------,.___     
+                                                              ```\_
+                                       ''')
+    # e encontrou um monstro ....O que deseja fazer?')#preso em uma jaula kkkkkkkk? ficou sem sentido mesmo kkkkkk
 
 
     obstaculo = Opcao("Atacar", "Tentar Passar Correndo e Levar Dano", "Fugir")
@@ -73,7 +98,7 @@ while controle == 1:
                     time.sleep(1)
                     print(".")
                 heroi.Atack()
-                input("Continuar ...")
+                input("Digite SIM para continuar ...")
                 break
         elif obstaculo1 == 3:
             print("Você optou por Fugir...")
@@ -98,8 +123,29 @@ while controle == 1:
                 time.sleep(1)
                 print(f"{espaco}PÀA ")
             print("OH não Eles Entraram Nãoooooo")
+            print('''                                      
+                                 _ _                        /               \           
+                             -/~/ / ~\                     :;                \       ___¨¨¨¨¨__
+                            || | | /\ ;\                   |l      _____     |;     ( \/    > >
+                            _\\)\)\)/ ;;;                  `8o __-~     ~\   d|      \      //
+                           ///(())(__/~;;\                  "88p;.  -. _\_;.oP        (_._/ /
+                          (((__   __ \\   \                  `>,% (\  (\./)8"         ;:'  i
+                          )))--`.'-- (( ;,8 \               ,;%%%:  ./V^^^V'          ;.   ;.
+                          ((\   |   /)) .,88  `: ..,,;;;;,-::::::'_::\   ||\         ;[8:   ;
+                           )|  ~-~  |(|(888; ..``'::::8888oooooo.  :\`^^^/,,~--._    |88::  |
+                           |\ -===- /|  \8;; ``:.      oo.8888888888:`((( o.ooo8888Oo;:;:'  |
+                           |_~-___-~_|   `-\.   `        `o`88888888b` )) 888b88888P""'     ;
+                           ; ~~~~;~~         "`--_`.       b`888888888;(.,"888b888"  ..::;-'
+                             ;      ;              ~"-....  b`8888888:::::.`8888. .:;;;''
+                                ;    ;                 `:::. `:::OOO:::::::.`OO' ;;;''
+                           :       ;                     `.      "``::::::''    .'
+                              ;                           `.   \_              /
+                            ;       ;                       +:   ~~--  `:'  -';
+                                                             `:         : .::/  -
+                                ;                            ;;+_  :::. :..;;;  
+                                                             ;;;;;;,;;;;;;;;,;
+                  ''') #se não gostar dos monstros pode tirar kkkkk
             print("Status -> Você Foi Capturado, Torturado e Morto")
-            print("GAME OVER") # Gamer Over Pode Ser Animado Acho uma boa 
             again = str(input("Deseja Jogar Novamente ? [S] ou [N]")).strip().upper()[0]
             if again == "S":
                 system('cls')
@@ -122,6 +168,31 @@ while controle == 1:
     if obstaculo1 == 1 or obstaculo1 == 2:
         heroi.exibeStatus()    
         print('você abriu a porta do quarto do rei... tem um monstro te olhando')
+        print('''              
+                                                              (    )
+                                                             ((((()))
+                                                             |o\ /o)|
+                                                             ( (  _')
+                                                              (._.  /\__
+                                                             ,\___,/ '  ')
+                                               '.,_,,       (  .- .   .    )
+                                                \   \\     ( '        )(    )
+                                                 \   \\    \.  _.__ ____( .  |
+                                                  \  /\\   .(   .'  /\  '.  )
+                                                   \(  \\.-' ( /    \/    \)
+                                                    '  ()) _'.-|/\/\/\/\/\|
+                                                        '\\ .( |\/\/\/\/\/|
+                                                          '((  \    /\    /
+                                                          ((((  '.__\/__.')
+                                                           ((,) /   ((()   )
+                                                            "..-,  (()("   /
+                                                             _//.   ((() ."
+                                                     _____ //,/" ___ ((( ', ___
+                                                                      ((  )
+                                                                       / /
+                                                                     _/,/'
+                                                                   /,/,"
+      ''')
         print('''              O que você faz?              ''')
         obstaculo = Opcao("Luta Ferosmente", "Tenta Fugir", "Passa Corrente e Toma Dano")
         obstaculo.escolha()
@@ -144,9 +215,18 @@ while controle == 1:
                     heroi.Atack()
                     break
             elif obstaculo2 == 2:
-                print('Você Tentou Fugir Mais Existinham Muitos Mosntros no Caminho Contrario .. e Você Morreu') 
-                print("GAMER OVER")
-                again = str(input("Deseja Jogar Novamente ? [S] ou [N]")).strip().upper()[0]
+                print('Você Tentou Fugir Mais Existinham Muitos Monstros no Caminho Contrario .. e Você Morreu') 
+                print("""  
+                     
+                                       (  ____ \(  ___  )(       )(  ____ \   (  ___  )|\     /|(  ____ \(  ____ )
+                                       | (    \/| (   ) || () () || (    \/   | (   ) || )   ( || (    \/| (    )|
+                                       | |      | (___) || || || || (__       | |   | || |   | || (__    | (____)|
+                                       | | ____ |  ___  || |(_)| ||  __)      | |   | |( (   ) )|  __)   |     __)
+                                       | | \_  )| (   ) || |   | || (         | |   | | \ \_/ / | (      | (\ (   
+                                       | (___) || )   ( || )   ( || (____/\   | (___) |  \   /  | (____/\| ) \ \__
+                                       (_______)|/     \||/     \|(_______/   (_______)   \_/   (_______/|/   \__/       
+                  """)#quando clico no N ele mostra foi um prazer te-lo conosto e o game over aparece embaixo denovo
+                again = str(input("Deseja Jogar Novamente ? [S] ou [N]")).strip().upper()[0]#quando clico no S ele não está fazendo nada, só obecede no N
                 if again == "S":
                     system('cls')
                     controle = 1
@@ -156,6 +236,7 @@ while controle == 1:
                    
             elif obstaculo2 == 3:
                 print(f'você Tentou Passar Correndo Foi Atacado') #precisa incrementar algo aqui ? hein Priscila 
+                #pode ser um "O monstro foi mais rápido e te atacou primeiro"
                 heroi.Dano(10)
                 print(f"Você Recebeu Dano do Monstro: {monster.titulo}\n Continuar?")
                 input() 
@@ -165,9 +246,44 @@ while controle == 1:
                 obstaculo1=int(input("Opção Invalida Escolha Novamente\n->"))
                 obstaculo.escolha()
 #//////////////////////////////////////////////////////////////// Falta Confronto com o boss e validar o saida 
+    print('Você chegou no salão principal do castelo, o monstro mais poderoso está aí vindo na sua direção... ')
+    print('''              
+                                                             __________________                                     
+                                                         __/______/    \______\__                                  
+                                                         (________( <[]> )________)                                 
+                                                         \________\    /________/                                  
+                                                         /\________\__/________/\             
+                                                         (((\  .___      ___,  /)))         
+                                                         ||||  (<@)      (@>)  ||||            
+                                                         )))\       (__,     /(((           
+                                                         (((  )  __________ (  )))        
+                                                         )))(  \VvVvVvVv/  )(((         
+                                                         (((  \ (AAAAAAAA) /  )))         
+                                                               \__________/                    
+                                                                    |  |
+                                                             _\_____)<>(_____/_                      
+                                                              /    /    \    \                                      
+                                                                  (_.--._)                   
+                                                                  ((    ))                   
+                                                                  _))  ((_  
+          ''')#esse boss ta meio feio, se quiser eu procuro outro
+    print('Seja rápido e descubra o ponto fraco do BOSS')
+    batalha = Opcao("barriga","Pescoço","Olhos")
+    batalha.escolha()
+    batalha1 = int(input("Escolha uma Opção\n--> "))
+    while True:
+        if batalha1 == 1:
+            print('Você machucou o Boss e deixou ele muito irritado, ataque outro ponto fraco!')
+        elif batalha1 == 2:
+            print('Você acertou o ponto fraco e deu um golpe fatal') 
+            heroi.Atack(15)
+            break
+        elif batalha1 == 3:
+            print('Você deixou o BOSS cego, ataque novamente')       
+    #aqui quando clica na opção 1 e 3 (quando não mata o monstro) pula o jogo reinicia
         system('cls')
         heroi.exibeStatus()
-        print('você Derrotou o BOSS e dps da sala dele há uma passagem secreta')
+        print('você Derrotou o BOSS a porta principal está trancada! você encostou na parede e encontrou  uma passagem secreta, você entrou e encontrou 3 saídas, qual você escolhe?')
         saida = Opcao("lado esquerdo", "lado direito", "subterraneo")
         saida.escolha()
         saidaFinal = int(input("Escolha Uma Opção\n-->"))
@@ -178,7 +294,7 @@ while controle == 1:
             print('Você passou de nivel!')
             nivel=int(input('deseja continuar? [S/N]')).upper().strip()[0]
         elif saidaFinal ==3:
-            print('Você caiu no fosso e foi devorado por jacarés') # se ele clicar tem que parar o jogo aqui
+            print('Você caiu no fosso e foi devorado por jacarés') # se ele clicar tem que parar o jogo aqui e continua
     else:
         again = str(input("Deseja Jogar Novamente ? [S]/[N]")).strip().upper()[0]
         if again == "S":
@@ -187,11 +303,3 @@ while controle == 1:
         else:
             print("Foi um Prazer Te-lo Conosco Volte Sempre!")
             controle = 2
-
-
-
-
-
-    
-
-
