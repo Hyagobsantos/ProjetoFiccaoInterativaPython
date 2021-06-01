@@ -23,7 +23,7 @@ print("\n")
 
 controle = 1
 while controle == 1:
-    nome = str(input('Digite o nome do Personagem:\n-> '))
+    nome = str(input('Digite o nome do Personagem Para Começar:\n-> '))
     system('cls')
     heroi = Personagem(nome, 100,10,0)  #instanciando objeto Heroi
     monster = Inimigo()
