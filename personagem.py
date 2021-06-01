@@ -22,7 +22,7 @@ class Personagem:
 
     def Atack(self):
         lv = Inimigo()
-        if self.forca > lv.forca:
+        if self.forca >= lv.forca:
             print(f"Parabens Você Venceu o Mostro {lv.titulo}\nGanhou +5 Força")
             self.forca += 5
         else:

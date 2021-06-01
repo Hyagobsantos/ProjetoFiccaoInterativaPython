@@ -9,14 +9,14 @@ import time
 system('cls') 
 
 #talvez seja melhor tirar o seja e deixar só o bem vindo, talvez com outra fonte, o que acha? ai em baixo do bem vindo coloca as opções do menu
-# texto = (str('''
-#                             __ ___   _  _    ___ ___ _   _   _ _ _ _  _ __   _  
-#                             / _| __| | |/ \  | o ) __| \_/ | | | | | \| |  \ / \ 
-#                             \_ \ _|n_| | o | | o \ _|| \_/ | | V | | \\ | o ) o )
-#                             |__/___\__/|_n_| |___/___|_| |_|  \_/|_|_|\_|__/ \_/ '''))
+texto = str('''
+                            __ ___   _  _    ___ ___ _   _   _ _ _ _  _ __   _  
+                            / _| __| | |/ \  | o ) __| \_/ | | | | | \| |  \ / \ 
+                            \_ \ _|n_| | o | | o \ _|| \_/ | | V | | \\ | o ) o )
+                            |__/___\__/|_n_| |___/___|_| |_|  \_/|_|_|\_|__/ \_/ ''')
 
-# animacao(texto)
-# print("\n")
+animacao(texto)
+print("\n")
 
 controle = 1
 while controle == 1:
