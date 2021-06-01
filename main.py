@@ -338,14 +338,14 @@ while controle == 1:
             controle = 2
     elif saidaFinal ==3:
         print('Você caiu no fosso e foi devorado por jacarés') # se ele clicar tem que parar o jogo aqui e continua
+    
+    again = str(input("Deseja Jogar Novamente ? [S]/[N]").strip().upper()[0])
+    if again == "S":
+        system('cls')
+        controle = 1
     else:
-        again = str(input("Deseja Jogar Novamente ? [S]/[N]").strip().upper()[0])
-        if again == "S":
-            system('cls')
-            controle = 1
-        else:
-            print("Foi um Prazer Te-lo Conosco Volte Sempre!")
-            controle = 2
+        print("Foi um Prazer Te-lo Conosco Volte Sempre!")
+        controle = 2
 
 
 
