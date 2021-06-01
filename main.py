@@ -347,5 +347,3 @@ while controle == 1:
         print("Foi um Prazer Te-lo Conosco Volte Sempre!")
         controle = 2
 
-
-
