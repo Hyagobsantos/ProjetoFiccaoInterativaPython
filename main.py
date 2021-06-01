@@ -276,7 +276,7 @@ while controle == 1:
         print(".")
     print('Agora Você chegou no salão principal do castelo Cuidado com esse monstro poderoso ... Reaja ele está aí vindo na sua direção... ')
     print('''              
-                                                              BOSS
+                                                              BOSS Clyde
                                                         __________________                                     
                                                     __/______/    \______\__                                  
                                                     (________( <[]> )________)                                 
