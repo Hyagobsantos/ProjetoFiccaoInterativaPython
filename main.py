@@ -291,9 +291,9 @@ while controle == 1:
                                                             \__________/                    
                                                                 |  |
                                                          _\_____)<>(_____/_                      
-                                                         /    /    \    \                                      
-                                                             (_.--._)                   
-                                                             ((    ))                   
+                                                         /     /    \    \                                      
+                                                              (_.--._)                   
+                                                              ((    ))                   
                                                               _))  ((_  
         ''')
     print('Seja rápido e descubra o ponto fraco do BOSS')
